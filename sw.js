@@ -1,6 +1,6 @@
 /* ClipForge AI service worker — app-shell caching for PWA install + offline.
    It never intercepts or stores user video content. */
-const CACHE = 'clipforge-v2'
+const CACHE = 'clipforge-v3'
 // Scope-relative shell so the SW works on a root domain AND under a
 // subpath (e.g. GitHub Pages /clipforge-ai/)
 const SCOPE = self.registration.scope
