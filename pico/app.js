@@ -105,6 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
     ask(text);
   };
   $('composer').addEventListener('submit', (e) => { e.preventDefault(); sendCurrent(); });
+  // Direct tap handler as well: on phones, a form submit triggered by tapping
+  // the button while the keyboard is open can be swallowed when the layout
+  // shifts mid-tap. sendCurrent() clears the box, so a double fire is a no-op.
+  $('send').addEventListener('click', (e) => { e.preventDefault(); sendCurrent(); });
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendCurrent(); }
   });
