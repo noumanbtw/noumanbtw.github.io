@@ -1,4 +1,4 @@
-const CACHE = 'pico-v3';
+const CACHE = 'pico-v4';
 const CORE = [
   './',
   './index.html',

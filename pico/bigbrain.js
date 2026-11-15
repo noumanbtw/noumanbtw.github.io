@@ -1,13 +1,13 @@
 'use strict';
-/* Pico's brain — Qwen2.5-1.5B-Instruct (free open-source weights), running
+/* Pico's brain — Qwen2.5-0.5B-Instruct (free open-source weights), running
    100% on-device via Transformers.js. Downloaded once from Hugging Face
    into the browser's own cache; fully offline afterwards.
    No API key, no account, no server. (His earlier home-grown brain was
    retired by Nouman's order on 2026-11-15 — this is Pico's only brain.) */
 
 window.PicoBig = (() => {
-  const MODEL_ID = 'onnx-community/Qwen2.5-1.5B-Instruct';
-  const LOCAL_ID = 'Qwen2.5-1.5B-Instruct';
+  const MODEL_ID = 'onnx-community/Qwen2.5-0.5B-Instruct';
+  const LOCAL_ID = 'Qwen2.5-0.5B-Instruct';
   const LIB = './lib/transformers.min.js'; // self-hosted Transformers.js 3.7.2 — no CDN dependency
   const SYSTEM = [
     'You are Pico, a tiny, cheerful robot-boy AI who lives on this phone.',
